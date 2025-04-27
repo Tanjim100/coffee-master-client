@@ -28,7 +28,7 @@ const AddCoffee = () => {
 
         console.log(newCoffee);
 
-        fetch('http://localhost:6010/coffee', {
+        fetch('https://coffee-master-server-puce.vercel.app/coffee', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

@@ -11,7 +11,7 @@ function App() {
   const [coffees, setCoffees] = useState(loadedCoffees);
 
   const handleDelete = _id => {
-    fetch(`http://localhost:6010/coffee/${_id}`, {
+    fetch(`https://coffee-master-server-puce.vercel.app/coffee/${_id}`, {
       method: 'DELETE',
     })
       .then(res => res.json())

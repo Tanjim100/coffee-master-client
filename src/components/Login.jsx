@@ -28,7 +28,7 @@ const Login = () => {
 
                 const updatedLog = { email, lastLogin };
 
-                fetch(`http://localhost:6010/users`, {
+                fetch(`https://coffee-master-server-puce.vercel.app/users`, {
                     method: 'PATCH',
                     headers: {
                         'content-type': 'application/json',

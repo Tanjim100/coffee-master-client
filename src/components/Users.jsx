@@ -24,7 +24,7 @@ const Users = () => {
                 //     icon: "success"
                 //   });
 
-                fetch(`http://localhost:6010/users/${_id}`, {
+                fetch(`https://coffee-master-server-puce.vercel.app/users/${_id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())

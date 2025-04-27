@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <App />,
-        loader: () => fetch('http://localhost:6010/coffee'),
+        loader: () => fetch('https://coffee-master-server-puce.vercel.app/coffee'),
       },
       {
         path: "/addCoffee",
@@ -35,17 +35,17 @@ const router = createBrowserRouter([
       {
         path: "/updateCoffee/:id",
         element: <UpdateCoffee />,
-        loader: ({ params }) => fetch(`http://localhost:6010/coffee/${params.id}`),
+        loader: ({ params }) => fetch(`https://coffee-master-server-puce.vercel.app/coffee/${params.id}`),
       },
       {
         path: "/viewCoffee/:id",
         element: <ViewCoffee />,
-        loader: ({ params }) => fetch(`http://localhost:6010/coffee/${params.id}`),
+        loader: ({ params }) => fetch(`https://coffee-master-server-puce.vercel.app/coffee/${params.id}`),
       },
       {
         path: "/users",
         element: <Users />,
-        loader: () => fetch('http://localhost:6010/users'),
+        loader: () => fetch('https://coffee-master-server-puce.vercel.app/users'),
       },
     ]
   },
